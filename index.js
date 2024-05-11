@@ -9,7 +9,7 @@ const HOSTNAME=process.env.HOSTNAME
 require('dotenv').config()
 console.log(process.env)
 HTTP_SERVER.listen(PORT,HOSTNAME,()=>{
-    console.log("server started")
+    console.log(`server strated at http://${HOSTNAME}:${PORT}`)
 })
 
 
