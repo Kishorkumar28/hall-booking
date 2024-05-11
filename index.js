@@ -1,18 +1,18 @@
 const express=require('express')
 const HTTP_SERVER=express()
 
-require("./db.js")
 //host address
 const PORT=5000
 const HOSTNAME="localhost"
 
 //configure configDotenv
-require("dotenv").config()
+require('dotenv').config()
+console.log(process.env)
 HTTP_SERVER.listen(PORT,HOSTNAME,()=>{
     console.log("server started")
 })
 
-console.log(process.env)
+
 HTTP_SERVER.use(express.json());
 
 //home
