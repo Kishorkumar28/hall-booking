@@ -224,4 +224,4 @@ HTTP_SERVER.get("/bookings/:id",(request,response)=>{
 })
 
 
-console.log(halls)
+console.log("Room datas",halls)
