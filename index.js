@@ -2,8 +2,8 @@ const express=require('express')
 const HTTP_SERVER=express()
 
 //host address
-const PORT=5000
-const HOSTNAME="localhost"
+const PORT=process.env.PORT
+const HOSTNAME=process.env.HOSTNAME
 
 //configure configDotenv
 require('dotenv').config()
