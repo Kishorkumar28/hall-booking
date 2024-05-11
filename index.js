@@ -1,12 +1,12 @@
 const express=require('express')
 const HTTP_SERVER=express()
-
+require('dotenv').config()
 //host address
 const PORT=process.env.PORT
 const HOSTNAME=process.env.HOSTNAME
-
+console.log("HOSTname and port is",HOSTNAME,PORT)
 //configure configDotenv
-require('dotenv').config()
+
 console.log(process.env)
 HTTP_SERVER.listen(PORT,HOSTNAME,()=>{
     console.log(`server strated at http://${HOSTNAME}:${PORT}`)
